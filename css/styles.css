@@ -88,15 +88,14 @@ h1 {
 }
 
 
-.first-name {
-    font-weight: 300;
-    margin-right: 10px;
+.first-name, .last-name {
+    font-weight: bold;
 }
 
 
 
 .last-name {
-    font-weight: 300;
+    margin-left: 5px;
 }
 
 
