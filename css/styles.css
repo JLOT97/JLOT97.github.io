@@ -89,14 +89,14 @@ h1 {
 
 
 .first-name {
-    font-weight: 700;
+    font-weight: 300;
     margin-right: 10px;
 }
 
 
 
 .last-name {
-    font-weight: 700;
+    font-weight: 300;
 }
 
 
@@ -128,5 +128,5 @@ span {
 .main img {
     width: 200px;
     border: 7px  solid aqua;
-    height: 500px;
+    height: 400px;
 }
