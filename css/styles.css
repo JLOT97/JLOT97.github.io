@@ -180,7 +180,9 @@ span {
 .portfolio-headings {
     display: flex;
     align-items: center;
+    flex-direction: column;
     justify-content: flex-start;
+    padding: 5em;
 }
 
 .portfolio-headings h2 {
