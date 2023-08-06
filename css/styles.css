@@ -204,13 +204,13 @@ span {
     padding: 1.5rem;
     border-radius: 10px;
     width: 600px; 
-    height: 250;/* Ancho del proyecto */
+    height: 30px;/* Ancho del proyecto */
 }
 
 
 /* Estilos para las imágenes de los proyectos */
 .card__img {
-    width: 30%; /* La imagen se ajustará al tamaño del contenedor */
+    width: 200 px; /* La imagen se ajustará al tamaño del contenedor */
     height: 150px; /* Altura de la imagen */
     background-size: cover;
     background-position: center;
