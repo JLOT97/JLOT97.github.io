@@ -12,7 +12,8 @@ body {
 }
 
 
-.wrapper {
+.wrapper,
+.portfolio {
     width: 100vw;
     height: 100vh;
     background-color: #191c32;
@@ -167,3 +168,6 @@ span {
 .about p {
     margin-bottom: 1em;
 }
+
+
+ 
