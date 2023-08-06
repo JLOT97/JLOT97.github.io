@@ -237,24 +237,6 @@ span {
     object-fit: cover;
 }
 
-.card__github {
-    display: flex;
-    flex-direction: column; /* Alinear el logo debajo del párrafo */
-    align-items: center; /* Centrar horizontalmente el logo de GitHub */
-    margin-top: 10px;
-}
 
-.card__github a {
-    color: #fff; 
-    text-decoration: none;
-}
-
-.github-logo {
-    width: 20px; /* Tamaño del logo de GitHub */
-    height: 20px; /* Tamaño del logo de GitHub */
-    color: #fff;
-    margin-top: 10px;
-    background-color: #2b3058;
-}
 
  
