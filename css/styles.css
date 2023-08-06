@@ -204,6 +204,7 @@ span {
 
 .card {
     width: calc(50% - 20px);
+    max-width: 300px; /* Tamaño máximo del card */
     background-color: #2b3058;
     padding: 20px;
     margin-bottom: 20px;
@@ -240,8 +241,8 @@ span {
 }
 
 .github-logo {
-    width: 5px;
-    height: 5px;
+    width: 40px; /* Tamaño del logo de GitHub */
+    height: 40px; /* Tamaño del logo de GitHub */
     background-color: #191c32;
     padding: 5px;
     border-radius: 50%;
