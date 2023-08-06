@@ -169,6 +169,9 @@ span {
 }
 
 
+
+
+
 .portfolio {
     width: 100vw;
     height: 100vh;
@@ -220,12 +223,13 @@ span {
 }
 
 .card__img img {
-    width: 100%;
+    width: 80%;
+    height: 60%;
 }
 
 .github-logo {
-    width: 40px;
-    height: 40px;
+    width: 30px;
+    height: 30px;
     background-color: #191c32;
     padding: 5px;
     border-radius: 50%;
