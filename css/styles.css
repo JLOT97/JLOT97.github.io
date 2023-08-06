@@ -198,7 +198,9 @@ span {
 
 .container {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    align-items: center;
+    gap: 20px; /* Espacio entre las cards */
     flex-wrap: wrap;
 }
 
@@ -236,7 +238,7 @@ span {
 
 .card__github {
     display: flex;
-    justify-content: space-evenly; /* Centrar horizontalmente el logo de GitHub */
+    justify-content: center; 
     margin-top: 10px;
 }
 
