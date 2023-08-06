@@ -180,6 +180,7 @@ span {
 .portfolio-headings {
     display: flex;
     align-items: center;
+    justify-content: flex-start;
 }
 
 .portfolio-headings h2 {
@@ -188,9 +189,11 @@ span {
 }
 
 .divider {
-    flex: 1;
-    height: 2px;
+    height: 4px;
+    width: 60px;
     background-color: aqua;
+    margin-top: 5px;
+    margin-bottom: 2em;
 }
 
 /* Estilos para los contenedores de los proyectos */
