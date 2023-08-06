@@ -241,11 +241,10 @@ span {
 }
 
 .github-logo {
-    width: 40px; /* Tamaño del logo de GitHub */
-    height: 40px; /* Tamaño del logo de GitHub */
+    width: 20px; /* Tamaño del logo de GitHub */
+    height: 20px; /* Tamaño del logo de GitHub */
     background-color: #191c32;
-    padding: 5px;
-    border-radius: 50%;
+    margin-right: 0.5rem;
 }
 
  
