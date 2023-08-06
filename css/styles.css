@@ -199,7 +199,7 @@ span {
 .container {
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
     gap: 20px; /* Espacio entre las cards */
     flex-wrap: wrap;
 }
@@ -213,6 +213,7 @@ span {
     display: flex;
     flex-direction: column;
     align-items: center; 
+    margin-top: 20px;
 }
 
 .card__title {
