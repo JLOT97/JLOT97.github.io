@@ -210,8 +210,8 @@ span {
 
 /* Estilos para las imágenes de los proyectos */
 .card__img {
-    width: 100%; /* La imagen se ajustará al tamaño del contenedor */
-    height: 200px; /* Altura de la imagen */
+    width: 30%; /* La imagen se ajustará al tamaño del contenedor */
+    height: 150px; /* Altura de la imagen */
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -239,12 +239,6 @@ span {
     margin-bottom: 1.5rem;
     padding: 10px; /* Hace el párrafo más cuadrado */
 }
-
-
-
-
-
-
 
 
 
