@@ -183,7 +183,7 @@ span {
 
 
 .portfolio-headings h2 {
-                font-size: 2.5em
+        font-size: 2.5em
 }
 
 
@@ -203,22 +203,22 @@ span {
     background-color: #2b3058;
     padding: 1.5rem;
     border-radius: 10px;
-    width: 300px; /* Ancho del proyecto */
+    width: 300px; 
+    height: 400;/* Ancho del proyecto */
 }
 
 
 /* Estilos para las imágenes de los proyectos */
 .card__img img {
-    width: 100%; /* La imagen se ajustará al tamaño del contenedor */
-    height: 150px;
+    width: 100%;
+    height: 60%; /* Ajustar la altura de las imágenes */
     background-size: cover;
-    margin-bottom: 1rem; /* Espacio entre la imagen y el título */
+    margin-bottom: 1rem;
 }
 
 
 .card__title {
     padding: 20 px;
-
 }
 
 
