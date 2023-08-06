@@ -236,13 +236,17 @@ span {
 
 .card__github {
     display: flex;
-    justify-content: center; /* Centrar horizontalmente el logo de GitHub */
+    justify-content: space-evenly; /* Centrar horizontalmente el logo de GitHub */
     margin-top: 10px;
 }
 
+.card__github a {
+    color: #fff; 
+    text-decoration: none;
+}
+
 .github-logo {
-    width: 20px; /* Tamaño del logo de GitHub */
-    height: 20px; /* Tamaño del logo de GitHub */
+    font-size: 1.5em;
     background-color: #191c32;
     margin-right: 0.5rem;
 }
