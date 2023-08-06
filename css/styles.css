@@ -168,12 +168,63 @@ span {
     margin-bottom: 1em;
 }
 
-.portfolio  {
+/* Estilos para la sección del portafolio */
+.portfolio {
     width: 100vw;
     height: 100vh;
     background-color: #191c32;
     color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
 }
+
+/* Estilos para los contenedores de los proyectos */
+.container {
+    display: flex;
+    gap: 2rem; /* Separación entre proyectos */
+}
+
+/* Estilos para cada proyecto */
+.card {
+    background-color: #282c43;
+    padding: 1.5rem;
+    border-radius: 10px;
+    width: 400px; /* Ancho del proyecto */
+}
+
+/* Estilos para los títulos de los proyectos */
+.card__title h2 {
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: center; /* Centrar el título */
+}
+
+/* Estilos para las descripciones de los proyectos */
+.project-description p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+}
+
+/* Estilos para los enlaces del logotipo de GitHub */
+.card a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #fff;
+    margin-top: 1rem; /* Espacio entre el párrafo y el enlace */
+}
+
+/* Estilos para el icono del logotipo de GitHub */
+.card img {
+    width: 20px;
+    height: 20px;
+    margin-right: 0.5rem;
+}
+
 
 
 
