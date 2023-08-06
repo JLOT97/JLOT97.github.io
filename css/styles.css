@@ -174,28 +174,11 @@ span {
     height: 100vh;
     background-color: #191c32;
     color: #fff;
-    padding: 20px;
-}
-
-.portfolio-headings {
     display: flex;
-    align-items: center;
     flex-direction: column;
-    justify-content: flex-start;
-    padding: 5em;
-}
-
-.portfolio-headings h2 {
-    font-size: 2rem;
-    margin-right: 10px;
-}
-
-.divider {
-    height: 4px;
-    width: 60px;
-    background-color: aqua;
-    margin-top: 5px;
-    margin-bottom: 2em;
+    align-items: flex-start; /* Alinea el contenido a la izquierda */
+    justify-content: center;
+    padding: 2rem;
 }
 
 /* Estilos para los contenedores de los proyectos */
@@ -216,7 +199,7 @@ span {
 .card__title h2 {
     font-size: 2rem;
     font-weight: bold;
-    text-align: center; /* Centrar el título */
+    text-align: left; /* Alinea el título a la izquierda */
 }
 
 /* Estilos para las descripciones de los proyectos */
@@ -224,21 +207,21 @@ span {
     font-size: 1.2rem;
     line-height: 1.6;
     margin-bottom: 1.5rem;
-    padding: 10px;
+    padding: 10px; /* Hace el párrafo más cuadrado */
 }
 
 /* Estilos para las imágenes de los proyectos */
 .card__img img {
     width: 100%; /* La imagen se ajustará al tamaño del contenedor */
-    max-height: 350px;
+    height: auto;
     margin-bottom: 1rem; /* Espacio entre la imagen y el título */
 }
-
 
 /* Estilos para los enlaces del logotipo de GitHub */
 .card a {
     display: flex;
     align-items: center;
+    justify-content: center; /* Centra el logo de GitHub */
     text-decoration: none;
     color: #fff;
     margin-top: 1rem; /* Espacio entre el párrafo y el enlace */
