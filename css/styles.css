@@ -225,7 +225,7 @@ span {
 /* Estilos para las imágenes de los proyectos */
 .card__img img {
     width: 100%; /* La imagen se ajustará al tamaño del contenedor */
-    height: auto;
+    max-height: 350px;
     margin-bottom: 1rem; /* Espacio entre la imagen y el título */
 }
 
