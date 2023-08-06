@@ -168,7 +168,7 @@ span {
     margin-bottom: 1em;
 }
 
-/* Estilos para la sección del portafolio */
+
 .portfolio {
     width: 100vw;
     height: 100vh;
@@ -176,11 +176,25 @@ span {
     color: #fff;
 }
 
+.portfolio-headings {
+    width: 100vw;
+    padding: 5em;
+}
+
+
+.portfolio-headings h2 {
+                font-size: 2.5em
+}
 
 
 /* Estilos para los contenedores de los proyectos */
-.container {
+.portfolio .container {
+    width: 80vw;
+    height: 80vh;
+    margin: 0 auto;
     display: flex;
+    justify-content: center;
+    align-items: center;
     gap: 2rem; /* Separación entre proyectos */
 }
 
