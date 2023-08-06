@@ -174,87 +174,62 @@ span {
     height: 100vh;
     background-color: #191c32;
     color: #fff;
+    padding: 20px;
 }
 
 .portfolio-headings {
-    width: 100vw;
-    padding: 5em;
+    display: flex;
+    align-items: center;
 }
-
 
 .portfolio-headings h2 {
-        font-size: 2.5em
+    font-size: 2rem;
+    margin-right: 10px;
 }
 
+.divider {
+    flex: 1;
+    height: 2px;
+    background-color: aqua;
+}
 
-
-.portfolio .container {
-    width: 80vw;
-    height: 80vh;
-    margin: 0 auto;
+.container {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 2rem; 
+    justify-content: space-between;
+    flex-wrap: wrap;
 }
-
 
 .card {
-    background-color: #2b3058;
-    padding: 1.5rem;
-    border-radius: 10px;
-    width: 500px; 
-    height: 300px;/* Ancho del proyecto */
+    width: calc(50% - 20px);
+    background-color: #1a1c34;
+    padding: 20px;
+    margin-bottom: 20px;
 }
-
-
-/* Estilos para las imágenes de los proyectos */
-.card__img {
-    width: 200px; /* La imagen se ajustará al tamaño del contenedor */
-    height: 150px; /* Altura de la imagen */
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    margin-bottom: 1rem; /* Espacio entre la imagen y el título */
-}
-
 
 .card__title {
-    padding: 20 px;
-}
-
-
-
-/* Estilos para los títulos de los proyectos */
-.card__title h2 {
-    font-size: 2rem;
-    font-weight: bold;
-    text-align: left; /* Alinea el título a la izquierda */
-}
-
-/* Estilos para las descripciones de los proyectos */
-.project-description p {
-    font-size: 1.2rem;
-    line-height: 1.6;
-    margin-bottom: 1.5rem;
-    padding: 10px; /* Hace el párrafo más cuadrado */
-}
-
-
-
-/* Estilos para los enlaces del logotipo de GitHub */
-.card a {
     display: flex;
     align-items: center;
-    justify-content: center; /* Centra el logo de GitHub */
-    text-decoration: none;
-    color: #fff;
-    margin-top: 1rem; /* Espacio entre el párrafo y el enlace */
 }
 
+.card__title h2 {
+    font-size: 1.5rem;
+}
 
+.project-description {
+    margin-top: 10px;
+}
 
+.card__img img {
+    width: 100%;
+}
 
+.github-logo {
+    width: 40px;
+    height: 40px;
+    background-color: #191c32;
+    padding: 5px;
+    border-radius: 50%;
+}
 
 
  
