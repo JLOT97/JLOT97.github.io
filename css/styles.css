@@ -206,7 +206,7 @@ span {
 
 .card {
     width: calc(50% - 20px);
-    max-width: 300px; /* Tamaño máximo del card */
+    width: 400px; 
     background-color: #2b3058;
     padding: 20px;
     margin-bottom: 20px;
