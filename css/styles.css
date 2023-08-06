@@ -204,7 +204,7 @@ span {
 
 .card {
     width: calc(50% - 20px);
-    background-color: #1a1c34;
+    background-color: #2b3058;
     padding: 20px;
     margin-bottom: 20px;
 }
@@ -230,7 +230,7 @@ span {
 .github-logo {
     width: 30px;
     height: 30px;
-    background-color: #191c32;
+    background-color: #2b3058;
     padding: 5px;
     border-radius: 50%;
 }
