@@ -175,7 +175,7 @@ span {
     background-color: #191c32;
     color: #fff;
     display: flex;
-    flex-direction: column;
+    flex-direction: flex-start;
     align-items: center;
     justify-content: center;
     padding: 2rem;
@@ -207,7 +207,16 @@ span {
     font-size: 1.2rem;
     line-height: 1.6;
     margin-bottom: 1.5rem;
+    padding: 10px;
 }
+
+/* Estilos para las imágenes de los proyectos */
+.card__img img {
+    width: 100%; /* La imagen se ajustará al tamaño del contenedor */
+    height: auto;
+    margin-bottom: 1rem; /* Espacio entre la imagen y el título */
+}
+
 
 /* Estilos para los enlaces del logotipo de GitHub */
 .card a {
@@ -220,8 +229,8 @@ span {
 
 /* Estilos para el icono del logotipo de GitHub */
 .card img {
-    width: 20px;
-    height: 20px;
+    width: 30px;
+    height: 30px;
     margin-right: 0.5rem;
 }
 
