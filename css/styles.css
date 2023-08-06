@@ -174,11 +174,23 @@ span {
     height: 100vh;
     background-color: #191c32;
     color: #fff;
+    padding: 20px;
+}
+
+.portfolio-headings {
     display: flex;
-    flex-direction: flex-start;
     align-items: center;
-    justify-content: center;
-    padding: 2rem;
+}
+
+.portfolio-headings h2 {
+    font-size: 2rem;
+    margin-right: 10px;
+}
+
+.divider {
+    flex: 1;
+    height: 2px;
+    background-color: aqua;
 }
 
 /* Estilos para los contenedores de los proyectos */
