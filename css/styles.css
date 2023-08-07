@@ -271,7 +271,8 @@ span {
 
 .contact-headings h2 {
     font-size: 3em;
-    margin-right: 1em;
+    margin-right: 10 px;
+    align-items: flex-start;
 }
 
 
