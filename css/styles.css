@@ -248,3 +248,47 @@ span {
     margin: 1em; /* Espacio entre el logo y el texto (si lo deseas) */
 }
 
+
+
+
+
+.contact-headings h2 {
+    font-size: 3em;
+}
+
+
+.container-contact {
+    padding: 3em;
+    margin: 0 auto;
+}
+
+
+.container-contact img {
+    width: 750px;
+    height: 700px;
+    bottom: 0px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: 30vw;
+    margin-top: 2em;
+}
+
+.form input {
+    padding: 10px 20px;
+    margin-bottom: 1em;
+    background: none;
+    border: none;
+    border-bottom: 1px solid #fff;
+    color: #fff;
+}
+
+.form textarea {
+    height: 150px;
+    background: none;
+    color: #fff;
+    padding: 1.5em;
+    border: 1px solid #fff;
+}
