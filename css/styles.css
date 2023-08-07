@@ -213,7 +213,7 @@ span {
     align-items: center; 
     margin-top: 20px;
     margin: 2em;
-    margin-top: 10px;
+    margin-top: 25px;
 
 }
 
@@ -245,6 +245,6 @@ span {
 .project-links img {
     width: 25px; /* Ajusta el tamaño según lo necesites */
     height: 25px; /* Ajusta el tamaño según lo necesites */
-    margin: 0.5em; /* Espacio entre el logo y el texto (si lo deseas) */
+    margin: 1em; /* Espacio entre el logo y el texto (si lo deseas) */
 }
 
