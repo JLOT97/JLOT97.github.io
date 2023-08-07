@@ -214,10 +214,11 @@ span {
 }
 
 .card__img img {
-    width: 100%;
+    width: 30%;
     max-height: 150px; 
     object-fit: cover;
 }
+
 
 .card__title {
     padding: 20px;
