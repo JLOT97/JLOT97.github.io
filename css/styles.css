@@ -271,7 +271,7 @@ span {
 
 .contact-headings h2 {
     font-size: 2em;
-    margin-right: 20px;
+    margin-right: 10px;
 }
 
 
@@ -282,7 +282,7 @@ span {
     justify-content: center; /* Centrar los elementos horizontalmente */
     align-items: center; /* Centrar los elementos verticalmente */
     flex-wrap: wrap; /* Permitir que los elementos se ajusten en pantallas más pequeñas */
-    gap: 20px; /* Espacio entre la imagen y el formulario */
+    gap: 40px; /* Espacio entre la imagen y el formulario */
 }
 
 
@@ -290,7 +290,7 @@ span {
     width: 600px;
     height: 400px;
     bottom: 0px;
-        
+
 }
 
 form {
