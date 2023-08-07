@@ -234,11 +234,7 @@ span {
 .project-links a {
     color: #fff;
     text-decoration: none;
+    background-image: url(../img/github.png);
 }
 
 
-.project-links i {
-    font-size: 1.5em;
-
-
-}
