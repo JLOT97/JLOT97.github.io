@@ -242,8 +242,8 @@ span {
 
 
 .project-links img {
-    width: 20px; /* Ajusta el tamaño según lo necesites */
-    height: 20px; /* Ajusta el tamaño según lo necesites */
-    margin-right: 25px; /* Espacio entre el logo y el texto (si lo deseas) */
+    width: 25px; /* Ajusta el tamaño según lo necesites */
+    height: 25px; /* Ajusta el tamaño según lo necesites */
+    margin-right: 0.5em; /* Espacio entre el logo y el texto (si lo deseas) */
 }
 
