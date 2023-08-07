@@ -263,6 +263,9 @@ span {
     background-color: #191c32;
     color: #fff;
     padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 
@@ -279,8 +282,8 @@ span {
 
 
 .container-contact img {
-    width: 750px;
-    height: 700px;
+    width: 400px;
+    height: 400px;
     bottom: 0px;
 }
 
@@ -306,4 +309,14 @@ form {
     color: #fff;
     padding: 1.5em;
     border: 1px solid #fff;
+}
+
+
+.btn-submit {
+    padding: 10px 20px;
+    background-color: #2b3058;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    margin-top: 1em;
 }
