@@ -207,7 +207,7 @@ span {
     width: 400px; 
     background-color: #2b3058;
     padding: 20px;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
     display: flex;
     flex-direction: column;
     align-items: center; 
@@ -216,7 +216,7 @@ span {
 }
 
 .card__img img {
-    width: 50%;
+    width: 90%;
     max-height: 150px; 
     object-fit: cover;
 }
@@ -243,6 +243,6 @@ span {
 .project-links img {
     width: 20px; /* Ajusta el tamaño según lo necesites */
     height: 20px; /* Ajusta el tamaño según lo necesites */
-    margin-right: 5px; /* Espacio entre el logo y el texto (si lo deseas) */
+    margin-right: 10px; /* Espacio entre el logo y el texto (si lo deseas) */
 }
 
