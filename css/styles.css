@@ -265,19 +265,24 @@ span {
     padding: 20px;
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
 }
 
 
 .contact-headings h2 {
     font-size: 2em;
-    margin-right: 15px;
+    margin-right: 20px;
 }
 
 
 .container-contact {
     padding: 1em;
     margin: 0 auto;
+    display: flex;
+    justify-content: center; /* Centrar los elementos horizontalmente */
+    align-items: center; /* Centrar los elementos verticalmente */
+    flex-wrap: wrap; /* Permitir que los elementos se ajusten en pantallas más pequeñas */
+    gap: 20px; /* Espacio entre la imagen y el formulario */
 }
 
 
@@ -285,8 +290,7 @@ span {
     width: 600px;
     height: 400px;
     bottom: 0px;
-    align-self: flex-start;
-    margin-bottom: 20px;
+        
 }
 
 form {
