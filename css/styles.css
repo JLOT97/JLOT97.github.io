@@ -172,6 +172,8 @@ span {
 
 
 
+
+
 .portfolio {
     width: 100vw;
     height: 100vh;
@@ -243,13 +245,21 @@ span {
 
 
 .project-links img {
-    width: 25px; /* Ajusta el tamaño según lo necesites */
-    height: 25px; /* Ajusta el tamaño según lo necesites */
-    margin: 1em; /* Espacio entre el logo y el texto (si lo deseas) */
+    width: 25px; 
+    height: 25px; 
+    margin: 1em; 
 }
 
 
 
+
+
+
+
+
+.contact-section {
+    background-color: #191c32;
+}
 
 
 .contact-headings h2 {
