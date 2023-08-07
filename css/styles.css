@@ -221,6 +221,21 @@ span {
 }
 
 
+
+
+.card__2 {
+    width: 400px; 
+    background-color: #2b3058;
+    padding: 20px;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    margin-top: 20px;
+}
+
+
+
 .card__img__2 {
     width: 100%;
     height: 150px;
