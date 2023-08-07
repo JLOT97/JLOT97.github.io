@@ -270,8 +270,8 @@ span {
 
 
 .contact-headings h2 {
-    font-size: 1em;
-    margin-right: 5px;
+    font-size: 2em;
+    margin-right: 15px;
 }
 
 
@@ -285,7 +285,8 @@ span {
     width: 600px;
     height: 400px;
     bottom: 0px;
-    margin-right: 20px;
+    align-self: flex-start;
+    margin-bottom: 20px;
 }
 
 form {
@@ -293,7 +294,7 @@ form {
     flex-direction: column;
     width: 30vw;
     margin-top: 2em;
-    margin-left: auto;
+    align-self: flex-end;
 }
 
 .form input {
