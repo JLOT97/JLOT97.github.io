@@ -292,7 +292,7 @@ span {
     width: 600px;
     height: 400px;
     bottom: 0px;
-
+    margin-top: 20px;
 }
 
 form {
@@ -301,6 +301,7 @@ form {
     width: 30vw;
     margin-top: 2em;
     align-self: flex-end;
+    margin-top: 20px;
 }
 
 .form input {
