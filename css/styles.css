@@ -270,14 +270,14 @@ span {
 
 
 .contact-headings h2 {
-    font-size: 3em;
-    margin-right: 10 px;
+    font-size: 1em;
+    margin-right: 8px;
     align-items: flex-start;
 }
 
 
 .container-contact {
-    padding: 1em;
+    padding: 3em;
     margin: 0 auto;
     display: flex;
     justify-content: space-between; /* Centrar los elementos horizontalmente */
