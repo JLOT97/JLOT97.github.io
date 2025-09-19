@@ -10,6 +10,7 @@ body {
     font-family: 'Montserrat', sans-serif; 
 }
 
+/* HEADER */
 .wrapper {
     width: 100vw;
     height: 100vh;
@@ -23,10 +24,6 @@ body {
     padding: 2em;
 }
 
-.brand {
-    margin-top: -7px;
-}
-
 .brand .white {
     color: #fff;
 }
@@ -37,8 +34,8 @@ body {
 
 .Menu {
     display: flex;
-    width: 50%;
     justify-content: space-around;
+    width: 50%;
 }
 
 .Menu li {
@@ -61,56 +58,25 @@ body {
     transition: ease-in .4s;
 }
 
+/* MAIN */
 .main {
-    margin: 0 auto;
     width: 80vw;
     height: 80vh;
+    margin: 0 auto;
     display: grid;
     grid-template-columns: repeat(2,1fr);
     align-items: center;
 }
 
-h1 {
-    font-size: 4em;
-}
-
-.first-name, .last-name {
-    font-weight: bold;
-}
-
-.last-name {
-    margin-left: 2px;
-}
-
-span {
-    color: aqua;
-}
-
-.download-cv {
-    padding: 10px 20px;
-    background-color: aqua;
-    border: none; 
-    border-radius: 20px;
-    margin-top: 15px;
-    cursor: pointer;
-    box-shadow: 1px 3px 11px -5px rgba(102, 231, 200, .69);
-}
-
-.download-cv:hover {
-    background-color: #fff;
-    box-shadow: none; 
-}
-
 .main-img {
     width: 350px;
-    border: 7px solid aqua;
     height: 520px;
+    border: 7px solid aqua;
 }
 
 /* ABOUT ME */
 .white-bg {
     background-color: #fff;
-    color: #191c32;
 }
 
 .about {
@@ -151,26 +117,14 @@ span {
 /* PORTFOLIO */
 .portfolio {
     width: 100vw;
+    background-color: #191c32;
     color: #fff;
     padding: 20px;
-    background-color: #191c32;
-}
-
-.portfolio-headings {
-    width: 100vw;
-    padding: 5em;
-}
-
-.portfolio-headings h2 {
-    font-size: 2em;
 }
 
 .portfolio .container {
-    width: 80vw;
-    margin: 0 auto;
     display: flex;
     justify-content: center;
-    align-items: flex-start;
     flex-wrap: wrap;
 }
 
@@ -186,7 +140,7 @@ span {
 
 .card__img img {
     width: 100%;
-    max-height: 200px; 
+    max-height: 200px;
     object-fit: cover;
 }
 
@@ -205,10 +159,10 @@ span {
     justify-content: center;
 }
 
-.project-links a img {
-    width: 25px; 
-    height: 25px; 
-    margin: 1em; 
+.project-links img {
+    width: 25px;
+    height: 25px;
+    margin: 1em;
 }
 
 /* CONTACT */
@@ -249,7 +203,7 @@ span {
 
 .contact-img {
     width: 100%;
-    max-width: 450px;
+    max-width: 350px; /* Igual que about */
     height: auto;
     object-fit: cover;
 }
