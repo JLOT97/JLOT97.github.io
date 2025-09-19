@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400&display=swap');
 
-
 * {
     margin: 0;
     padding: 0;
@@ -11,31 +10,20 @@ body {
     font-family: 'Montserrat', sans-serif; 
 }
 
-
-.wrapper {
-    width: 100vw;
-    height: 100vh;
-    background-color: #191c32;
-    color: #fff;
-}
-
+/* NAVBAR */
 .navbar {
     display: flex;
     justify-content: space-between;
     padding: 2em;
+    background-color: #191c32;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
 }
-
-
-.brand {
-    margin-top: -7px;
-}
-
-
 
 .brand span {
- color: aqua;
+    color: aqua;
 }
-
 
 .Menu {
     display: flex;
@@ -43,13 +31,9 @@ body {
     justify-content: space-around;
 }
 
-
-
 .Menu li {
-list-style: none;
+    list-style: none;
 }
-
-
 
 .Menu a {
     color: #fff;
@@ -57,14 +41,9 @@ list-style: none;
     padding: 10px 20px;
 }
 
-
-
-
 .Menu .active {
     color: aqua;
 }
-
-
 
 .Menu a:hover {
     background-color: aqua;
@@ -72,38 +51,40 @@ list-style: none;
     transition: ease-in .4s;
 }
 
-.main {
-    margin: 0 auto;
-    width: 80vw;
+/* HOME */
+.wrapper {
+    width: 100vw;
     height: 80vh;
+    background-color: #191c32;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.main {
     display: grid;
     grid-template-columns: repeat(2,1fr);
     align-items: center;
+    gap: 2em;
+    width: 80vw;
 }
-
-
 
 h1 {
     font-size: 4em;
 }
 
-
 .first-name, .last-name {
     font-weight: bold;
 }
-
-
 
 .last-name {
     margin-left: 2px;
 }
 
-
-
 span {
     color: aqua;
 }
-
 
 .download-cv {
     padding: 10px 20px;
@@ -115,34 +96,35 @@ span {
     box-shadow: 1px 3px 11px -5px rgba(102, 231, 200, .69);
 }
 
-
-
 .download-cv:hover {
     background-color: #fff;
     box-shadow: none; 
 }
 
-
-
-.main img {
-    width: 350px;
-    border: 7px  solid aqua;
-    height: 520px;
+.profile-img {
+    width: 300px;
+    height: 450px;
+    border: 7px solid aqua;
+    object-fit: cover;
+    border-radius: 10px;
 }
 
-
-
+/* ABOUT ME */
 .about {
     display: grid;
     grid-template-columns: repeat(10,1fr);
     width: 100vw;
+    background-color: #fff;
+    color: #191c32;
     align-items: center;
+    padding: 2em 0;
 }
-
 
 .about img {
     width: 100%;
     grid-column: 1/5;
+    height: 300px;
+    object-fit: cover;
 }
 
 .about-info {
@@ -152,7 +134,6 @@ span {
 
 .about-info h2 {
     font-size: 2em;
-    color: #191c32;
 }
 
 .divider {
@@ -163,169 +144,107 @@ span {
     margin-bottom: 2em;
 }
 
-
 .about p {
     margin-bottom: 1em;
+    text-align: justify;
 }
 
-
-
-
-
-
-
+/* PORTFOLIO */
 .portfolio {
     width: 100vw;
-    height: 100vh;
     background-color: #191c32;
     color: #fff;
-    padding: 20px;
+    padding: 50px 20px;
 }
 
 .portfolio-headings {
     width: 100vw;
-    padding: 5em;
+    padding: 2em;
 }
 
 .portfolio-headings h2 {
     font-size: 2em;
-    margin-right: 10px;
 }
-
 
 .portfolio .container {
-    width: 80vw;
-    height: 80vh;
-    margin: 0 auto;
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
-    align-items: center;
+    gap: 2em;
 }
 
-
-
 .card {
-    width: calc(50% - 20px);
-    width: 400px; 
+    width: 350px; 
     background-color: #2b3058;
     padding: 20px;
-    margin-bottom: 30px;
     display: flex;
     flex-direction: column;
     align-items: center; 
-    margin-top: 20px;
-    margin: 2em;
-    margin-top: -10em;
+    border-radius: 10px;
+    text-align: justify;
+    transition: transform .3s;
+}
 
+.card:hover {
+    transform: scale(1.05);
 }
 
 .card__img img {
     width: 100%;
-    max-height: 200px; 
+    height: 200px;
     object-fit: cover;
+    border-radius: 10px;
 }
-
 
 .card__title {
-    padding: 20px;
+    padding: 10px 0;
 }
 
-
-.project-links {
-    display: flex;
-    justify-content: space-evenly;
+.project-description {
+    font-size: 0.9em;
+    line-height: 1.3em;
 }
 
-
-.project-links a {
-    background-color: #2b3058;
-    text-decoration: none;
-    
-}
-
-
-.project-links img {
-    width: 25px; 
-    height: 25px; 
-    margin: 1em; 
-}
-
-
-
-
-
-
-
-
+/* CONTACT */
 .contact-section {
     width: 100vw;
-    height: 100vh;
     background-color: #191c32;
     color: #fff;
-    padding: 20px;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
+    padding: 50px 20px;
 }
-
 
 .contact-headings h2 {
     font-size: 2em;
-    margin-right: 25px;
 }
-
 
 .container-contact {
-    padding: 3em;
-    margin: 0 auto;
     display: flex;
-    justify-content: space-between; /* Centrar los elementos horizontalmente */
-    align-items: center; /* Centrar los elementos verticalmente */
-    flex-wrap: wrap; /* Permitir que los elementos se ajusten en pantallas más pequeñas */
-    gap: 70px; /* Espacio entre la imagen y el formulario */
-    margin-top: 30px;
+    justify-content: center;
+    align-items: center;
+    gap: 3em;
+    flex-wrap: wrap;
+    margin-top: 20px;
 }
 
-
-.container-contact img {
-    width: 600px;
+.contact-img {
+    width: 300px;
     height: 400px;
-    bottom: 0px;
-    margin-top: 30px;
+    border-radius: 10px;
+    object-fit: cover;
 }
 
-form {
+.contact-icons {
     display: flex;
-    flex-direction: column;
-    width: 30vw;
-    margin-top: 2em;
-    align-self: flex-end;
-    margin-top: 30px;
+    gap: 20px;
 }
 
-.form input {
-    padding: 10px 20px;
-    margin-bottom: 1em;
-    background: none;
-    border: none;
-    border-bottom: 1px solid #fff;
-    color: #fff;
-}
-
-.form textarea {
-    height: 150px;
-    background: none;
-    color: #fff;
-    padding: 1.5em;
-    border: 1px solid #fff;
-}
-
-
-.btn-submit {
-    padding: 10px 20px;
-    background-color: #2b3058;
-    color: #fff;
-    border: none;
+.contact-icons img {
+    width: 40px;
+    height: 40px;
     cursor: pointer;
-    margin-top: 1em;
+    transition: transform .3s;
+}
+
+.contact-icons img:hover {
+    transform: scale(1.2);
 }

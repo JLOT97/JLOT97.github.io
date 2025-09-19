@@ -9,21 +9,23 @@
 </head>
 <body>
 
-    <div class="wrapper">
-        <header>
-            <nav class="navbar">
-                <div class="brand">
-                    <h2>J<span>O</span></h2>
-                </div>
-                <ul class="Menu">
-                    <li><a class="active" href="#">Home</a></li>
-                    <li><a href="#">About me</a></li>
-                    <li><a href="#">Portfolio</a></li>
-                    <li><a href="#">Contact</a></li>
-                </ul>
-            </nav>
-        </header>
+    <!-- HEADER -->
+    <header id="home">
+        <nav class="navbar">
+            <div class="brand">
+                <h2>J<span>O</span></h2>
+            </div>
+            <ul class="Menu">
+                <li><a href="#home" class="active">Home</a></li>
+                <li><a href="#about">About me</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
 
+    <!-- HOME -->
+    <div class="wrapper">
         <main class="main">
             <div class="info-content">
                 <h1>I'm <span class="first-name">Jorge</span> <span class="last-name">Ortega</span></h1>
@@ -32,24 +34,24 @@
                     <button class="download-cv">Download CV</button>
                 </a>
             </div>
-            <img src="./img/F9.jpg" alt="Jorge Luis Ortega picture">
+            <img src="./img/F9.jpg" alt="Jorge Luis Ortega picture" class="profile-img">
         </main>
     </div>
     
-    <div class="about">
+    <!-- ABOUT ME -->
+    <div class="about" id="about">
         <img src="./img/F3.jpg" alt="data science picture">   
-
         <div class="about-info">
             <h2>About me</h2>
             <div class="divider"></div>
             <p>Passionate about data science with experience in successful machine learning projects. My focus is creating innovative solutions for companies, using tools like Python, scikit-learn, Power BI, SQL, MongoDB, AWS, NumPy, Seaborn and Pandas.</p>
             <p>My ability to harness these resources, coupled with proficiency in data visualization, allows me to transform complex data into valuable insights. I actively seek to contribute my skills and knowledge to the success of a company, harnessing the transformative power of data to achieve impressive results.</p>
-            <button class="download-cv">Read more</button>
+            <a href="https://github.com/JLOT97"><button class="download-cv">Read more</button></a>
         </div>
     </div>
 
-
-    <div class="portfolio">
+    <!-- PORTFOLIO -->
+    <div class="portfolio" id="portfolio">
         <div class="portfolio-headings">
             <h2>My Portfolio</h2>
             <div class="divider"></div>
@@ -57,63 +59,57 @@
         <div class="container">
             <!-- Project MLOps -->
             <div class="card">
-                <div class="card__img">
-                    <img src="./img/mlops.jpg" alt="Project MLOps">
-                </div>
-                <div class="card__title">
-                    <h2>Project MLOps</h2>
-                </div>
-                <div class="project-description">
-                    <p>Stream-ML: Movie recommendation system. Learn from patterns and similarities between movies to give you the best recommendations. Explore data, use the model, and access the API to get suggestions based on your favorite titles.</p>
-                </div>
-                <div class="project-links">
-                    <a href="https://github.com/JLOT97/Stream-ML" target="_blank">
-                        <img src="./img/gith-img.jpg" alt="GitHub Logo">
-                    </a>
-                </div>
+                <a href="https://github.com/JLOT97/Stream-ML" target="_blank">
+                    <div class="card__img">
+                        <img src="./img/mlops.jpg" alt="Project MLOps">
+                    </div>
+                    <div class="card__title">
+                        <h2>Project MLOps</h2>
+                    </div>
+                    <div class="project-description">
+                        <p>Stream-ML: Movie recommendation system. Learn from patterns and similarities between movies to give you the best recommendations. Explore data, use the model, and access the API to get suggestions based on your favorite titles.</p>
+                    </div>
+                </a>
             </div>
 
             <!-- MOOCs Analysis Project -->
             <div class="card">
-                <div class="card__img">
-                    <img src="./img/mooc.jpg" alt="MOOCs Analysis Project">
-                </div>
-                <div class="card__title">
-                    <h2>MOOCs Analysis Project</h2>
-                </div>
-                <div class="project-description">
-                    <p>Thorough analysis and visualization of trends, opportunities and challenges in the online course market was carried out. Data cleaning, EDA and web scraping were implemented. An interactive dashboard was developed in Power BI to obtain valuable information.</p>
-                </div>
-                <div class="project-links">
-                    <a href="https://github.com/JLOT97/MOOCs" target="_blank">
-                        <img src="./img/gith-img.jpg" alt="GitHub Logo">
-                    </a>
-                </div>
+                <a href="https://github.com/JLOT97/MOOCs" target="_blank">
+                    <div class="card__img">
+                        <img src="./img/mooc.jpg" alt="MOOCs Analysis Project">
+                    </div>
+                    <div class="card__title">
+                        <h2>MOOCs Analysis Project</h2>
+                    </div>
+                    <div class="project-description">
+                        <p>Thorough analysis and visualization of trends, opportunities and challenges in the online course market was carried out. Data cleaning, EDA and web scraping were implemented. An interactive dashboard was developed in Power BI to obtain valuable information.</p>
+                    </div>
+                </a>
             </div>
         </div>
     </div>
 
-
-    <div class="contact-section">
+    <!-- CONTACT -->
+    <div class="contact-section" id="contact">
         <div class="contact-headings">
-            <h2>keep in touch</h2>
+            <h2>Contact</h2>
             <div class="divider"></div>
         </div>
         <div class="container-contact">
-            <img src="./img/img contact.jpg" alt="Jorge Luis Ortega picture">
-            <div class="contact-form">
-                <h4>Send me a message...</h4>
-                <form class="form">
-                    <input type="text" placeholder="Name">
-                    <input type="email" placeholder="Email">
-                    <textarea placeholder="Place your message here">
-                    </textarea>
-                    <button class="btn-submit">Send message</button>
-                </form>
+            <img src="./img/img contact.jpg" alt="Jorge Luis Ortega picture" class="contact-img">
+            <div class="contact-icons">
+                <a href="https://www.linkedin.com/in/jorge-luis-ortega-tamara-1b877724a" target="_blank">
+                    <img src="./img/linked.png" alt="LinkedIn">
+                </a>
+                <a href="https://wa.me/573245569964" target="_blank">
+                    <img src="./img/wpp.png" alt="WhatsApp">
+                </a>
+                <a href="https://github.com/JLOT97" target="_blank">
+                    <img src="./img/git.png" alt="GitHub">
+                </a>
             </div>
         </div>
     </div>
-
 
 </body>
 </html>
