@@ -103,12 +103,6 @@ span {
     box-shadow: none; 
 }
 
-/* Botón Read More mantiene el estilo original al hacer hover */
-.read-more-btn:hover {
-    background-color: aqua;
-    color: #191c32;
-}
-
 .profile-img {
     width: 300px;
     height: 450px;
@@ -157,22 +151,40 @@ span {
     text-align: justify;
 }
 
+/* Botón Read More - color específico al hacer hover */
+.read-more-btn {
+    padding: 10px 20px;
+    background-color: aqua;
+    border: none; 
+    border-radius: 20px;
+    margin-top: 15px;
+    cursor: pointer;
+    box-shadow: 1px 3px 11px -5px rgba(102, 231, 200, .69);
+}
+
+.read-more-btn:hover {
+    background-color: #191c32; /* Color azul oscuro del portfolio */
+    color: white;
+}
+
 /* PORTFOLIO */
 .portfolio {
     width: 100vw;
     background-color: #191c32;
     color: #fff;
-    padding: 50px 20px;
+    padding: 50px 0; /* Cambiado para mejor alineación */
 }
 
 .portfolio-headings {
     width: 80vw;
     margin: 0 auto;
-    text-align: center; /* Título centrado como la barra aqua */
+    text-align: left; /* Alineado a la izquierda (no centrado) */
+    padding: 0 10%; /* Añadido para alineación consistente */
 }
 
 .portfolio-headings h2 {
     font-size: 2em;
+    text-align: left; /* Asegurar alineación izquierda */
 }
 
 .portfolio .container {
@@ -180,6 +192,8 @@ span {
     flex-wrap: wrap;
     justify-content: center;
     gap: 2em;
+    width: 80vw; /* Añadido */
+    margin: 0 auto; /* Añadido */
 }
 
 .card {
