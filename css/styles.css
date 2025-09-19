@@ -52,29 +52,33 @@ body {
     font-weight: 700;
 }
 
-/* Páginas CLARAS (About, Contact): Header con fondo aqua */
+/* Páginas CLARAS (About, Contact): Header OSCURO con botones aqua */
 .about-page .navbar,
 .contact-page .navbar {
-    background-color: aqua; /* cambio de fondo */
-    color: white;           /* texto blanco */
+    background-color: #191c32; /* navbar oscuro */
+    color: white;               /* texto blanco */
 }
 
 .about-page .Menu a,
 .contact-page .Menu a {
-    color: white;
+    background-color: aqua; /* botones aqua */
+    color: white;           /* texto blanco */
+    font-weight: 400;
+    border-radius: 20px;
+    padding: 10px 20px;
+    transition: all 0.3s ease;
 }
 
 .about-page .Menu a:hover,
 .contact-page .Menu a:hover {
-    background-color: white;
-    color: aqua;
+    background-color: white; /* hover inverso */
+    color: #191c32;
 }
 
 .about-page .Menu .active,
 .contact-page .Menu .active {
-    background-color: white;
-    color: aqua;
-    font-weight: 700;
+    font-weight: 700;       /* negrita para activo */
+    box-shadow: 0 2px 8px rgba(0, 255, 255, 0.4);
 }
 
 /* NAVBAR (ESTILOS BASE) */
@@ -105,11 +109,8 @@ body {
 
 .Menu a {
     text-decoration: none;
-    padding: 10px 20px;
-    border-radius: 20px;
-    transition: all 0.3s ease;
-    font-weight: 400;
 }
+
 
 
 
