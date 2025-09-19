@@ -14,11 +14,41 @@ body {
 }
 
 /* HEADER STYLES FOR DIFFERENT PAGES */
+/* Páginas OSCURAS (Home, Portfolio): Header CLARO */
 .home-page .navbar,
 .portfolio-page .navbar {
-    background-color: #191c32; /* Dark blue for dark pages */
+    background-color: white; /* Fondo blanco para contraste */
+    color: #191c32; /* Texto oscuro */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Sombra suave para definición */
 }
 
+.home-page .Menu a,
+.portfolio-page .Menu a {
+    color: #191c32; /* Texto oscuro */
+}
+
+.home-page .Menu a:hover,
+.portfolio-page .Menu a:hover {
+    background-color: #191c32; /* Fondo oscuro al hover */
+    color: white; /* Texto blanco al hover */
+}
+
+.home-page .Menu .active,
+.portfolio-page .Menu .active {
+    color: aqua; /* Color aqua para enlace activo */
+}
+
+.home-page .brand h2 span,
+.portfolio-page .brand h2 span {
+    color: #191c32; /* JO en color oscuro */
+}
+
+.home-page .brand h2 span:first-child,
+.portfolio-page .brand h2 span:first-child {
+    color: aqua; /* La "J" en aqua para mantener identidad */
+}
+
+/* Páginas CLARAS (About, Contact): Header OSCURO (como antes) */
 .about-page .navbar,
 .contact-page .navbar {
     background-color: #191c32; /* Dark header for light pages */
@@ -41,7 +71,12 @@ body {
     color: aqua;
 }
 
-/* NAVBAR */
+.about-page .brand h2 span,
+.contact-page .brand h2 span {
+    color: aqua; /* JO en color aqua */
+}
+
+/* NAVBAR (ESTILOS BASE - se mantienen igual) */
 .navbar {
     display: flex;
     justify-content: space-between;
@@ -49,10 +84,6 @@ body {
     position: sticky;
     top: 0;
     z-index: 1000;
-}
-
-.brand h2 span {
-    color: aqua;
 }
 
 .Menu {
@@ -66,21 +97,13 @@ body {
 }
 
 .Menu a {
-    color: #fff;
     text-decoration: none;
     padding: 10px 20px;
-    transition: ease-in .4s;
+    border-radius: 20px;
+    transition: all 0.3s ease;
 }
 
-.Menu .active {
-    color: aqua;
-}
-
-.Menu a:hover {
-    background-color: aqua;
-    color: #191c32;
-}
-
+/* REST OF YOUR CSS REMAINS EXACTLY THE SAME */
 /* HOME PAGE */
 .home-page {
     background-color: #191c32;
@@ -89,7 +112,7 @@ body {
 
 .wrapper {
     width: 100vw;
-    height: calc(100vh - 96px); /* Full height minus header */
+    height: calc(100vh - 96px);
     display: flex;
     align-items: center;
     justify-content: center;
