@@ -11,10 +11,60 @@ body {
     min-height: 100vh;
     display: flex;
     flex-direction: column;
+    opacity: 0;
+    transition: opacity 0.5s ease-in;
 }
 
-/* HEADER STYLES FOR DIFFERENT PAGES */
-/* Páginas OSCURAS (Home, Portfolio): Header CLARO */
+body.loaded {
+    opacity: 1;
+}
+
+/* ANIMATIONS */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes fadeInRight {
+    from {
+        opacity: 0;
+        transform: translateX(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+}
+
+@keyframes particles {
+    0% { transform: translateY(0) translateX(0); opacity: 0; }
+    10% { opacity: 1; }
+    100% { transform: translateY(-100vh) translateX(100vw); opacity: 0; }
+}
+
+/* HEADER STYLES */
 .home-page .navbar,
 .portfolio-page .navbar {
     background-color: white;
@@ -33,25 +83,14 @@ body {
     color: white;
 }
 
-/* BOTÓN ACTIVO EN HEADERS CLAROS - ESTILO CONSISTENTE */
 .home-page .Menu .active,
 .portfolio-page .Menu .active {
-    color: white !important; /* Texto blanco */
-    background-color: aqua; /* Fondo aqua */
+    color: white !important;
+    background-color: aqua;
     font-weight: 700;
     box-shadow: 0 2px 8px rgba(0, 255, 255, 0.4);
 }
 
-/* JO EN AQUA Y NEGRITA PARA TODOS LOS HEADERS */
-.home-page .brand h2 span,
-.portfolio-page .brand h2 span,
-.about-page .brand h2 span,
-.contact-page .brand h2 span {
-    color: aqua !important;
-    font-weight: 700;
-}
-
-/* Páginas CLARAS (About, Contact): Header OSCURO */
 .about-page .navbar,
 .contact-page .navbar {
     background-color: #191c32;
@@ -69,16 +108,23 @@ body {
     color: #191c32;
 }
 
-/* BOTÓN ACTIVO EN HEADERS OSCUROS - ESTILO CONSISTENTE */
 .about-page .Menu .active,
 .contact-page .Menu .active {
-    color: #191c32 !important; /* Texto oscuro */
-    background-color: aqua; /* Fondo aqua */
+    color: #191c32 !important;
+    background-color: aqua;
     font-weight: 700;
     box-shadow: 0 2px 8px rgba(0, 255, 255, 0.4);
 }
 
-/* NAVBAR (ESTILOS BASE) */
+.home-page .brand h2 span,
+.portfolio-page .brand h2 span,
+.about-page .brand h2 span,
+.contact-page .brand h2 span {
+    color: aqua !important;
+    font-weight: 700;
+}
+
+/* NAVBAR */
 .navbar {
     display: flex;
     justify-content: space-between;
@@ -112,7 +158,27 @@ body {
     font-weight: 400;
 }
 
-/* REST OF YOUR CSS REMAINS THE SAME */
+/* PARTICLES BACKGROUND */
+.particles-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    overflow: hidden;
+}
+
+.particles-background::before {
+    content: '';
+    position: absolute;
+    width: 2px;
+    height: 2px;
+    background: rgba(0, 255, 255, 0.3);
+    border-radius: 50%;
+    animation: particles 15s infinite linear;
+}
+
 /* HOME PAGE */
 .home-page {
     background-color: #191c32;
@@ -133,6 +199,7 @@ body {
     align-items: center;
     gap: 2em;
     width: 80vw;
+    animation: fadeInUp 0.8s ease-out;
 }
 
 h1 {
@@ -151,6 +218,13 @@ span {
     color: aqua;
 }
 
+.animated-text {
+    display: inline-block;
+    overflow: hidden;
+    white-space: nowrap;
+    animation: typing 1.5s steps(10, end);
+}
+
 .download-cv {
     padding: 10px 20px;
     background-color: aqua;
@@ -159,6 +233,24 @@ span {
     margin-top: 15px;
     cursor: pointer;
     box-shadow: 1px 3px 11px -5px rgba(102, 231, 200, .69);
+    position: relative;
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+
+.download-cv::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255,255,255,0.2), transparent);
+    transition: left 0.5s;
+}
+
+.download-cv:hover::before {
+    left: 100%;
 }
 
 .download-cv:hover {
@@ -173,6 +265,11 @@ span {
     border: 7px solid aqua;
     object-fit: cover;
     border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.profile-img:hover {
+    transform: scale(1.05) rotate(2deg);
 }
 
 /* ABOUT PAGE */
@@ -188,6 +285,7 @@ span {
     min-height: calc(100vh - 96px);
     align-items: center;
     padding: 2em 0;
+    animation: fadeInLeft 0.8s ease-out;
 }
 
 .about-fullpage img {
@@ -219,6 +317,37 @@ span {
     text-align: justify;
 }
 
+/* SKILLS SECTION */
+.skills-container {
+    margin-top: 2em;
+}
+
+.skill {
+    margin-bottom: 1.5em;
+}
+
+.skill-name {
+    display: block;
+    margin-bottom: 0.5em;
+    font-weight: 600;
+    color: #191c32;
+}
+
+.skill-bar {
+    background-color: #e0e0e0;
+    border-radius: 10px;
+    overflow: hidden;
+    height: 8px;
+}
+
+.skill-progress {
+    height: 100%;
+    background: linear-gradient(90deg, aqua, #00bfff);
+    border-radius: 10px;
+    width: 0;
+    transition: width 1.5s ease-in-out;
+}
+
 .read-more-btn {
     padding: 10px 20px;
     background-color: aqua;
@@ -227,11 +356,13 @@ span {
     margin-top: 15px;
     cursor: pointer;
     box-shadow: 1px 3px 11px -5px rgba(102, 231, 200, .69);
+    transition: all 0.3s ease;
 }
 
 .read-more-btn:hover {
     background-color: #191c32;
     color: white;
+    transform: translateY(-2px);
 }
 
 /* PORTFOLIO PAGE */
@@ -244,6 +375,7 @@ span {
     width: 100vw;
     min-height: calc(100vh - 96px);
     padding: 50px 0;
+    animation: fadeInUp 0.8s ease-out;
 }
 
 .portfolio-headings {
@@ -276,18 +408,28 @@ span {
     align-items: center; 
     border-radius: 10px;
     color: #fff;
-    transition: transform .3s;
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 
 .card:hover {
-    transform: scale(1.05);
+    transform: translateY(-10px) scale(1.02);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+}
+
+.card__img {
+    overflow: hidden;
+    border-radius: 10px;
 }
 
 .card__img img {
     width: 100%;
     height: 200px;
     object-fit: cover;
-    border-radius: 10px;
+    transition: transform 0.5s ease;
+}
+
+.card:hover .card__img img {
+    transform: scale(1.1);
 }
 
 .card__title {
@@ -337,6 +479,7 @@ span {
     min-height: calc(100vh - 96px);
     align-items: center;
     padding: 2em 0;
+    animation: fadeInRight 0.8s ease-out;
 }
 
 .contact-img {
@@ -367,15 +510,26 @@ span {
     margin-top: 20px;
 }
 
+.contact-icons a {
+    transition: all 0.3s ease;
+    border-radius: 50%;
+    padding: 8px;
+}
+
+.contact-icons a:hover {
+    background-color: rgba(0, 255, 255, 0.1);
+    transform: translateY(-5px);
+}
+
 .contact-icons img {
     width: 35px;
     height: 35px;
     cursor: pointer;
-    transition: transform .3s;
+    transition: all 0.3s ease;
 }
 
-.contact-icons img:hover {
-    transform: scale(1.2);
+.contact-icons a:hover img {
+    transform: scale(1.2) rotate(5deg);
 }
 
 /* RESPONSIVE DESIGN */
@@ -403,6 +557,11 @@ span {
         grid-column: 1/-1;
         padding: 2rem;
     }
+    
+    .animated-text {
+        animation: none;
+        white-space: normal;
+    }
 }
 
 @media (max-width: 768px) {
@@ -425,7 +584,6 @@ span {
         width: 90vw;
     }
     
-    /* Ajuste para enlaces activos en móviles */
     .home-page .Menu .active,
     .portfolio-page .Menu .active {
         background-color: aqua;
@@ -462,5 +620,10 @@ span {
     .Menu a {
         padding: 8px 16px;
         font-size: 0.9rem;
+    }
+    
+    .contact-icons img {
+        width: 30px;
+        height: 30px;
     }
 }
