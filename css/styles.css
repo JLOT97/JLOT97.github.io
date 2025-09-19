@@ -1,3 +1,4 @@
+/* Import y base */
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400&display=swap');
 
 * {
@@ -10,6 +11,7 @@ body {
     font-family: 'Montserrat', sans-serif; 
 }
 
+/* Wrapper Home */
 .wrapper {
     width: 100vw;
     height: 100vh;
@@ -17,6 +19,7 @@ body {
     color: #fff;
 }
 
+/* Navbar */
 .navbar {
     display: flex;
     justify-content: space-between;
@@ -57,6 +60,7 @@ list-style: none;
     transition: ease-in .4s;
 }
 
+/* Main Home */
 .main {
     margin: 0 auto;
     width: 80vw;
@@ -97,17 +101,19 @@ span {
     box-shadow: none; 
 }
 
-.main img {
-    width: 350px;
-    border: 7px  solid aqua;
-    height: 520px;
+.main-photo {
+    width: 320px;
+    height: 480px;
+    border: 7px solid aqua;
 }
 
+/* About */
 .about {
     display: grid;
     grid-template-columns: repeat(10,1fr);
     width: 100vw;
     align-items: center;
+    background-color: #2b3058; /* azul de fondo */
 }
 
 .about img {
@@ -122,7 +128,7 @@ span {
 
 .about-info h2 {
     font-size: 2em;
-    color: #191c32;
+    color: #fff;
 }
 
 .divider {
@@ -137,6 +143,7 @@ span {
     margin-bottom: 1em;
 }
 
+/* Portfolio */
 .portfolio {
     width: 100vw;
     height: 100vh;
@@ -162,25 +169,27 @@ span {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
 }
 
 .card {
-    width: calc(50% - 20px);
     width: 400px; 
     background-color: #2b3058;
     padding: 20px;
-    margin-bottom: 30px;
+    margin: 2em;
     display: flex;
     flex-direction: column;
     align-items: center; 
-    margin-top: 20px;
-    margin: 2em;
-    margin-top: -10em;
+}
+
+.card a {
+    text-decoration: none;
+    color: #fff;
 }
 
 .card__img img {
     width: 100%;
-    max-height: 200px; 
+    height: 200px;
     object-fit: cover;
 }
 
@@ -188,31 +197,17 @@ span {
     padding: 20px;
 }
 
-.project-links {
-    display: flex;
-    justify-content: space-evenly;
+.project-description {
+    text-align: justify;
 }
 
-.project-links a {
-    background-color: #2b3058;
-    text-decoration: none;
-}
-
-.project-links img {
-    width: 25px; 
-    height: 25px; 
-    margin: 1em; 
-}
-
+/* Contact */
 .contact-section {
     width: 100vw;
-    height: 100vh;
+    height: 70vh;
     background-color: #191c32;
     color: #fff;
     padding: 20px;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
 }
 
 .contact-headings h2 {
@@ -221,54 +216,25 @@ span {
 }
 
 .container-contact {
-    padding: 3em;
-    margin: 0 auto;
     display: flex;
-    justify-content: space-between; /* Centrar los elementos horizontalmente */
-    align-items: center; /* Centrar los elementos verticalmente */
-    flex-wrap: wrap; /* Permitir que los elementos se ajusten en pantallas más pequeñas */
-    gap: 70px; /* Espacio entre la imagen y el formulario */
-    margin-top: 30px;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 50px;
+    padding: 3em;
 }
 
 .container-contact img {
-    width: 600px;
-    height: 400px;
-    bottom: 0px;
-    margin-top: 30px;
+    width: 500px;
+    height: 350px;
 }
 
-form {
+.contact-links {
     display: flex;
     flex-direction: column;
-    width: 30vw;
-    margin-top: 2em;
-    align-self: flex-end;
-    margin-top: 30px;
+    gap: 20px;
 }
 
-.form input {
-    padding: 10px 20px;
-    margin-bottom: 1em;
-    background: none;
-    border: none;
-    border-bottom: 1px solid #fff;
-    color: #fff;
-}
-
-.form textarea {
-    height: 150px;
-    background: none;
-    color: #fff;
-    padding: 1.5em;
-    border: 1px solid #fff;
-}
-
-.btn-submit {
-    padding: 10px 20px;
-    background-color: #2b3058;
-    color: #fff;
-    border: none;
-    cursor: pointer;
-    margin-top: 1em;
+.contact-links img {
+    width: 50px;
+    height: 50px;
 }
