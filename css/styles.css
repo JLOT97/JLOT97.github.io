@@ -96,10 +96,17 @@ span {
     box-shadow: 1px 3px 11px -5px rgba(102, 231, 200, .69);
 }
 
+/* Solo el botón Download CV cambia a blanco al hacer hover */
 .download-cv:hover {
-    background-color: #191c32; /* Azul del portfolio al hacer hover */
-    color: white;
+    background-color: white;
+    color: #191c32;
     box-shadow: none; 
+}
+
+/* Botón Read More mantiene el estilo original al hacer hover */
+.read-more-btn:hover {
+    background-color: aqua;
+    color: #191c32;
 }
 
 .profile-img {
@@ -161,11 +168,11 @@ span {
 .portfolio-headings {
     width: 80vw;
     margin: 0 auto;
+    text-align: center; /* Título centrado como la barra aqua */
 }
 
 .portfolio-headings h2 {
     font-size: 2em;
-    text-align: center;
 }
 
 .portfolio .container {
@@ -215,7 +222,7 @@ span {
 .project-description {
     font-size: 0.9em;
     line-height: 1.3em;
-    text-align: justify; /* Texto justificado en lugar de centrado */
+    text-align: justify; /* Texto justificado */
 }
 
 .project-description p {
@@ -225,6 +232,12 @@ span {
 
 .card:hover .project-description p {
     color: aqua; /* Cambia a aqua al hacer hover */
+}
+
+/* Eliminar subrayado morado de los enlaces de las cards */
+.card-link {
+    text-decoration: none;
+    color: inherit;
 }
 
 /* CONTACT - NUEVA ESTRUCTURA (IGUAL A ABOUT ME) */
