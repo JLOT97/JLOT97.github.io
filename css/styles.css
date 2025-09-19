@@ -167,33 +167,33 @@ span {
     color: white;
 }
 
-/* PORTFOLIO */
+/* PORTFOLIO - CAMBIO PRINCIPAL */
 .portfolio {
     width: 100vw;
     background-color: #191c32;
     color: #fff;
-    padding: 50px 0; /* Cambiado para mejor alineación */
+    padding: 50px 0;
 }
 
 .portfolio-headings {
     width: 80vw;
     margin: 0 auto;
-    text-align: left; /* Alineado a la izquierda (no centrado) */
-    padding: 0 10%; /* Añadido para alineación consistente */
+    text-align: left;
+    padding-left: 2em; /* ESPACIO IGUAL AL GAP ENTRE CARDS (2em) */
 }
 
 .portfolio-headings h2 {
     font-size: 2em;
-    text-align: left; /* Asegurar alineación izquierda */
+    text-align: left;
 }
 
 .portfolio .container {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 2em;
-    width: 80vw; /* Añadido */
-    margin: 0 auto; /* Añadido */
+    gap: 2em; /* Este es el espacio entre cards (2em) */
+    width: 80vw;
+    margin: 0 auto;
 }
 
 .card {
@@ -230,13 +230,13 @@ span {
 }
 
 .card:hover .card__title h2 {
-    color: aqua; /* Cambia a aqua al hacer hover */
+    color: aqua;
 }
 
 .project-description {
     font-size: 0.9em;
     line-height: 1.3em;
-    text-align: justify; /* Texto justificado */
+    text-align: justify;
 }
 
 .project-description p {
@@ -245,16 +245,15 @@ span {
 }
 
 .card:hover .project-description p {
-    color: aqua; /* Cambia a aqua al hacer hover */
+    color: aqua;
 }
 
-/* Eliminar subrayado morado de los enlaces de las cards */
 .card-link {
     text-decoration: none;
     color: inherit;
 }
 
-/* CONTACT - NUEVA ESTRUCTURA (IGUAL A ABOUT ME) */
+/* CONTACT */
 .contact-section {
     display: grid;
     grid-template-columns: repeat(10, 1fr);
@@ -283,18 +282,18 @@ span {
 
 .contact-info p {
     margin-bottom: 1em;
-    text-align: justify; /* Texto justificado */
+    text-align: justify;
 }
 
 .contact-icons {
     display: flex;
-    justify-content: center; /* Iconos centrados */
+    justify-content: center;
     gap: 20px;
     margin-top: 20px;
 }
 
 .contact-icons img {
-    width: 35px; /* Iconos más pequeños (de 40px a 35px) */
+    width: 35px;
     height: 35px;
     cursor: pointer;
     transition: transform .3s;
