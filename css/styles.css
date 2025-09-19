@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400&display=swap');
 
 * {
     margin: 0;
@@ -14,87 +14,76 @@ body {
 }
 
 /* HEADER STYLES FOR DIFFERENT PAGES */
-
 /* Páginas OSCURAS (Home, Portfolio): Header CLARO */
 .home-page .navbar,
 .portfolio-page .navbar {
-    background-color: white;
-    color: #191c32;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    background-color: white; /* Fondo blanco para contraste */
+    color: #191c32; /* Texto oscuro */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Sombra suave para definición */
 }
 
 .home-page .Menu a,
 .portfolio-page .Menu a {
-    color: #191c32;
+    color: #191c32; /* Texto oscuro */
 }
 
 .home-page .Menu a:hover,
 .portfolio-page .Menu a:hover {
-    background-color: #191c32;
-    color: white;
+    background-color: #191c32; /* Fondo oscuro al hover */
+    color: white; /* Texto blanco al hover */
 }
 
-/* ENLACE ACTIVO EN HEADERS CLAROS - MÁS VISIBLE */
 .home-page .Menu .active,
 .portfolio-page .Menu .active {
-    color: #191c32 !important;
-    background-color: aqua;
-    font-weight: 700;
-    box-shadow: 0 2px 8px rgba(0, 255, 255, 0.4);
+    color: aqua; /* Color aqua para enlace activo */
 }
 
-/* JO EN AQUA Y NEGRITA PARA TODOS LOS HEADERS */
 .home-page .brand h2 span,
-.portfolio-page .brand h2 span,
-.about-page .brand h2 span,
-.contact-page .brand h2 span {
-    color: aqua !important;
-    font-weight: 700;
+.portfolio-page .brand h2 span {
+    color: #191c32; /* JO en color oscuro */
 }
 
-/* Páginas CLARAS (About, Contact): Header OSCURO con botones aqua */
+.home-page .brand h2 span:first-child,
+.portfolio-page .brand h2 span:first-child {
+    color: aqua; /* La "J" en aqua para mantener identidad */
+}
+
+/* Páginas CLARAS (About, Contact): Header OSCURO (como antes) */
 .about-page .navbar,
 .contact-page .navbar {
-    background-color: #191c32; /* navbar oscuro */
-    color: white;               /* texto blanco */
+    background-color: #191c32; /* Dark header for light pages */
+    color: white;
 }
 
 .about-page .Menu a,
 .contact-page .Menu a {
-    background-color: aqua; /* botones aqua */
-    color: white;           /* texto blanco */
-    font-weight: 400;
-    border-radius: 20px;
-    padding: 10px 20px;
-    transition: all 0.3s ease;
+    color: white;
 }
 
 .about-page .Menu a:hover,
 .contact-page .Menu a:hover {
-    background-color: white; /* hover inverso */
+    background-color: aqua;
     color: #191c32;
 }
 
 .about-page .Menu .active,
 .contact-page .Menu .active {
-    font-weight: 700;       /* negrita para activo */
-    box-shadow: 0 2px 8px rgba(0, 255, 255, 0.4);
+    color: aqua;
 }
 
-/* NAVBAR (ESTILOS BASE) */
+.about-page .brand h2 span,
+.contact-page .brand h2 span {
+    color: aqua; /* JO en color aqua */
+}
+
+/* NAVBAR (ESTILOS BASE - se mantienen igual) */
 .navbar {
     display: flex;
     justify-content: space-between;
-    align-items: center;
     padding: 2em;
     position: sticky;
     top: 0;
     z-index: 1000;
-}
-
-.brand h2 {
-    font-weight: 700;
-    font-size: 1.8rem;
 }
 
 .Menu {
@@ -109,15 +98,12 @@ body {
 
 .Menu a {
     text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+    transition: all 0.3s ease;
 }
 
-
-
-
-
-
-
-/* REST OF YOUR CSS REMAINS THE SAME */
+/* REST OF YOUR CSS REMAINS EXACTLY THE SAME */
 /* HOME PAGE */
 .home-page {
     background-color: #191c32;
@@ -429,13 +415,6 @@ span {
     .portfolio-fullpage .container {
         width: 90vw;
     }
-    
-    /* Ajuste para enlaces activos en móviles */
-    .home-page .Menu .active,
-    .portfolio-page .Menu .active {
-        background-color: #191c32;
-        color: aqua !important;
-    }
 }
 
 @media (max-width: 480px) {
@@ -452,9 +431,5 @@ span {
     .about-info h2,
     .contact-info h2 {
         font-size: 1.8em;
-    }
-    
-    .brand h2 {
-        font-size: 1.5rem;
     }
 }
