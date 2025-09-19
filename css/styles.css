@@ -10,6 +10,7 @@ body {
     font-family: 'Montserrat', sans-serif; 
 }
 
+/* HEADER */
 .wrapper {
     width: 100vw;
     height: 100vh;
@@ -57,6 +58,7 @@ body {
     transition: ease-in .4s;
 }
 
+/* MAIN */
 .main {
     margin: 0 auto;
     width: 80vw;
@@ -103,12 +105,14 @@ span {
     height: 520px;
 }
 
+/* ABOUT */
 .about {
     display: grid;
     grid-template-columns: repeat(10,1fr);
     width: 100vw;
     align-items: center;
-    background-color: #2b3058;
+    background-color: #fff; /* fondo blanco */
+    color: #000;
 }
 
 .about img {
@@ -123,7 +127,7 @@ span {
 
 .about-info h2 {
     font-size: 2em;
-    color: #fff;
+    color: #191c32;
 }
 
 .divider {
@@ -138,9 +142,9 @@ span {
     margin-bottom: 1em;
 }
 
+/* PORTFOLIO */
 .portfolio {
     width: 100vw;
-    height: 100vh;
     background-color: #191c32;
     color: #fff;
     padding: 20px;
@@ -153,7 +157,6 @@ span {
 
 .portfolio-headings h2 {
     font-size: 2em;
-    margin-right: 10px;
 }
 
 .portfolio .container {
@@ -215,13 +218,13 @@ span {
 
 .contact-headings h2 {
     font-size: 2em;
-    margin-right: 25px;
+    margin-left: 5em; /* alinea con My Portfolio */
 }
 
 .container-contact {
     display: flex;
     align-items: center;
-    gap: 30px;
+    gap: 50px;
     padding: 3em;
     flex-wrap: wrap;
 }
@@ -235,8 +238,9 @@ span {
 
 .contact-links {
     display: flex;
-    flex-direction: column;
-    gap: 15px;
+    flex-direction: row; /* horizontal */
+    gap: 25px; /* separación entre íconos */
+    align-items: center;
 }
 
 .contact-links img {
