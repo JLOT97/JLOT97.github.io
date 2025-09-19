@@ -14,6 +14,7 @@ body {
 }
 
 /* HEADER STYLES FOR DIFFERENT PAGES */
+
 /* Páginas OSCURAS (Home, Portfolio): Header CLARO */
 .home-page .navbar,
 .portfolio-page .navbar {
@@ -51,11 +52,11 @@ body {
     font-weight: 700;
 }
 
-/* Páginas CLARAS (About, Contact): Header OSCURO */
+/* Páginas CLARAS (About, Contact): Header con fondo aqua */
 .about-page .navbar,
 .contact-page .navbar {
-    background-color: #191c32;
-    color: white;
+    background-color: aqua; /* cambio de fondo */
+    color: white;           /* texto blanco */
 }
 
 .about-page .Menu a,
@@ -65,12 +66,13 @@ body {
 
 .about-page .Menu a:hover,
 .contact-page .Menu a:hover {
-    background-color: aqua;
-    color: #191c32;
+    background-color: white;
+    color: aqua;
 }
 
 .about-page .Menu .active,
 .contact-page .Menu .active {
+    background-color: white;
     color: aqua;
     font-weight: 700;
 }
@@ -108,6 +110,11 @@ body {
     transition: all 0.3s ease;
     font-weight: 400;
 }
+
+
+
+
+
 
 /* REST OF YOUR CSS REMAINS THE SAME */
 /* HOME PAGE */
