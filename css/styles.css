@@ -7,7 +7,38 @@
 }
 
 body {
-    font-family: 'Montserrat', sans-serif; 
+    font-family: 'Montserrat', sans-serif;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* HEADER STYLES FOR DIFFERENT PAGES */
+.home-page .navbar,
+.portfolio-page .navbar {
+    background-color: #191c32; /* Dark blue for dark pages */
+}
+
+.about-page .navbar,
+.contact-page .navbar {
+    background-color: #191c32; /* Dark header for light pages */
+    color: white;
+}
+
+.about-page .Menu a,
+.contact-page .Menu a {
+    color: white;
+}
+
+.about-page .Menu a:hover,
+.contact-page .Menu a:hover {
+    background-color: aqua;
+    color: #191c32;
+}
+
+.about-page .Menu .active,
+.contact-page .Menu .active {
+    color: aqua;
 }
 
 /* NAVBAR */
@@ -15,14 +46,13 @@ body {
     display: flex;
     justify-content: space-between;
     padding: 2em;
-    background-color: #191c32;
     position: sticky;
     top: 0;
     z-index: 1000;
 }
 
 .brand h2 span {
-    color: aqua; /* JO en color aqua */
+    color: aqua;
 }
 
 .Menu {
@@ -39,6 +69,7 @@ body {
     color: #fff;
     text-decoration: none;
     padding: 10px 20px;
+    transition: ease-in .4s;
 }
 
 .Menu .active {
@@ -48,15 +79,17 @@ body {
 .Menu a:hover {
     background-color: aqua;
     color: #191c32;
-    transition: ease-in .4s;
 }
 
-/* HOME */
-.wrapper {
-    width: 100vw;
-    height: 80vh;
+/* HOME PAGE */
+.home-page {
     background-color: #191c32;
     color: #fff;
+}
+
+.wrapper {
+    width: 100vw;
+    height: calc(100vh - 96px); /* Full height minus header */
     display: flex;
     align-items: center;
     justify-content: center;
@@ -96,7 +129,6 @@ span {
     box-shadow: 1px 3px 11px -5px rgba(102, 231, 200, .69);
 }
 
-/* Solo el botón Download CV cambia a blanco al hacer hover */
 .download-cv:hover {
     background-color: white;
     color: #191c32;
@@ -111,18 +143,22 @@ span {
     border-radius: 10px;
 }
 
-/* ABOUT ME */
-.about {
+/* ABOUT PAGE */
+.about-page {
+    background-color: #fff;
+    color: #191c32;
+}
+
+.about-fullpage {
     display: grid;
     grid-template-columns: repeat(10,1fr);
     width: 100vw;
-    background-color: #fff;
-    color: #191c32;
+    min-height: calc(100vh - 96px);
     align-items: center;
     padding: 2em 0;
 }
 
-.about img {
+.about-fullpage img {
     width: 100%;
     grid-column: 1/5;
     height: 300px;
@@ -146,12 +182,11 @@ span {
     margin-bottom: 2em;
 }
 
-.about p {
+.about-info p {
     margin-bottom: 1em;
     text-align: justify;
 }
 
-/* Botón Read More - color específico al hacer hover */
 .read-more-btn {
     padding: 10px 20px;
     background-color: aqua;
@@ -163,15 +198,19 @@ span {
 }
 
 .read-more-btn:hover {
-    background-color: #191c32; /* Color azul oscuro del portfolio */
+    background-color: #191c32;
     color: white;
 }
 
-/* PORTFOLIO - CAMBIO PRINCIPAL */
-.portfolio {
-    width: 100vw;
+/* PORTFOLIO PAGE */
+.portfolio-page {
     background-color: #191c32;
     color: #fff;
+}
+
+.portfolio-fullpage {
+    width: 100vw;
+    min-height: calc(100vh - 96px);
     padding: 50px 0;
 }
 
@@ -179,7 +218,7 @@ span {
     width: 80vw;
     margin: 0 auto;
     text-align: left;
-    padding-left: 2em; /* ESPACIO IGUAL AL GAP ENTRE CARDS (2em) */
+    padding-left: 2em;
 }
 
 .portfolio-headings h2 {
@@ -187,11 +226,11 @@ span {
     text-align: left;
 }
 
-.portfolio .container {
+.portfolio-fullpage .container {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 2em; /* Este es el espacio entre cards (2em) */
+    gap: 2em;
     width: 80vw;
     margin: 0 auto;
 }
@@ -253,13 +292,17 @@ span {
     color: inherit;
 }
 
-/* CONTACT */
-.contact-section {
+/* CONTACT PAGE */
+.contact-page {
+    background-color: #fff;
+    color: #191c32;
+}
+
+.contact-fullpage {
     display: grid;
     grid-template-columns: repeat(10, 1fr);
     width: 100vw;
-    background-color: #fff;
-    color: #191c32;
+    min-height: calc(100vh - 96px);
     align-items: center;
     padding: 2em 0;
 }
@@ -301,4 +344,69 @@ span {
 
 .contact-icons img:hover {
     transform: scale(1.2);
+}
+
+/* RESPONSIVE DESIGN */
+@media (max-width: 992px) {
+    .main {
+        grid-template-columns: 1fr;
+        text-align: center;
+        gap: 2rem;
+    }
+    
+    .about-fullpage,
+    .contact-fullpage {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+    
+    .about-fullpage img,
+    .contact-img {
+        grid-column: 1/-1;
+        height: 300px;
+    }
+    
+    .about-info,
+    .contact-info {
+        grid-column: 1/-1;
+        padding: 2rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .Menu {
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+    }
+    
+    .navbar {
+        flex-direction: column;
+        padding: 1rem;
+    }
+    
+    .portfolio-headings {
+        padding-left: 1em;
+    }
+    
+    .portfolio-fullpage .container {
+        width: 90vw;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 2.5em;
+    }
+    
+    .profile-img {
+        width: 250px;
+        height: 350px;
+    }
+    
+    .portfolio-headings h2,
+    .about-info h2,
+    .contact-info h2 {
+        font-size: 1.8em;
+    }
 }
