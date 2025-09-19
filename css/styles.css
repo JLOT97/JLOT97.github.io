@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400&display=swap');
 
+
 * {
     margin: 0;
     padding: 0;
@@ -10,7 +11,7 @@ body {
     font-family: 'Montserrat', sans-serif; 
 }
 
-/* HEADER */
+
 .wrapper {
     width: 100vw;
     height: 100vh;
@@ -24,13 +25,17 @@ body {
     padding: 2em;
 }
 
+
 .brand {
     margin-top: -7px;
 }
 
+
+
 .brand span {
  color: aqua;
 }
+
 
 .Menu {
     display: flex;
@@ -38,9 +43,13 @@ body {
     justify-content: space-around;
 }
 
+
+
 .Menu li {
-    list-style: none;
+list-style: none;
 }
+
+
 
 .Menu a {
     color: #fff;
@@ -48,9 +57,14 @@ body {
     padding: 10px 20px;
 }
 
+
+
+
 .Menu .active {
     color: aqua;
 }
+
+
 
 .Menu a:hover {
     background-color: aqua;
@@ -58,7 +72,6 @@ body {
     transition: ease-in .4s;
 }
 
-/* MAIN */
 .main {
     margin: 0 auto;
     width: 80vw;
@@ -68,21 +81,29 @@ body {
     align-items: center;
 }
 
+
+
 h1 {
     font-size: 4em;
 }
+
 
 .first-name, .last-name {
     font-weight: bold;
 }
 
+
+
 .last-name {
     margin-left: 2px;
 }
 
+
+
 span {
     color: aqua;
 }
+
 
 .download-cv {
     padding: 10px 20px;
@@ -94,26 +115,30 @@ span {
     box-shadow: 1px 3px 11px -5px rgba(102, 231, 200, .69);
 }
 
+
+
 .download-cv:hover {
     background-color: #fff;
     box-shadow: none; 
 }
 
+
+
 .main img {
     width: 350px;
-    border: 7px solid aqua;
+    border: 7px  solid aqua;
     height: 520px;
 }
 
-/* ABOUT */
+
+
 .about {
     display: grid;
     grid-template-columns: repeat(10,1fr);
     width: 100vw;
     align-items: center;
-    background-color: #fff; /* fondo blanco */
-    color: #000;
 }
+
 
 .about img {
     width: 100%;
@@ -138,13 +163,20 @@ span {
     margin-bottom: 2em;
 }
 
+
 .about p {
     margin-bottom: 1em;
 }
 
-/* PORTFOLIO */
+
+
+
+
+
+
 .portfolio {
     width: 100vw;
+    height: 100vh;
     background-color: #191c32;
     color: #fff;
     padding: 20px;
@@ -157,25 +189,34 @@ span {
 
 .portfolio-headings h2 {
     font-size: 2em;
+    margin-right: 10px;
 }
+
 
 .portfolio .container {
     width: 80vw;
+    height: 80vh;
     margin: 0 auto;
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-wrap: wrap;
 }
 
+
+
 .card {
+    width: calc(50% - 20px);
     width: 400px; 
     background-color: #2b3058;
     padding: 20px;
-    margin: 2em;
+    margin-bottom: 30px;
     display: flex;
     flex-direction: column;
     align-items: center; 
+    margin-top: 20px;
+    margin: 2em;
+    margin-top: -10em;
+
 }
 
 .card__img img {
@@ -184,23 +225,24 @@ span {
     object-fit: cover;
 }
 
+
 .card__title {
     padding: 20px;
 }
 
-.project-description {
-    text-align: justify;
-}
 
 .project-links {
     display: flex;
     justify-content: space-evenly;
 }
 
+
 .project-links a {
     background-color: #2b3058;
     text-decoration: none;
+    
 }
+
 
 .project-links img {
     width: 25px; 
@@ -208,48 +250,82 @@ span {
     margin: 1em; 
 }
 
-/* CONTACT */
+
+
+
+
+
+
+
 .contact-section {
     width: 100vw;
+    height: 100vh;
     background-color: #191c32;
     color: #fff;
     padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
 }
+
 
 .contact-headings h2 {
     font-size: 2em;
-    margin-left: 5em; /* alinea con My Portfolio */
+    margin-right: 25px;
 }
+
 
 .container-contact {
-    display: flex;
-    align-items: center;
-    gap: 50px;
     padding: 3em;
-    flex-wrap: wrap;
-}
-
-.contact-photo {
-    width: 350px;
-    height: auto;
-    border: 5px solid aqua;
-    border-radius: 10px;
-}
-
-.contact-links {
+    margin: 0 auto;
     display: flex;
-    flex-direction: row; /* horizontal */
-    gap: 25px; /* separación entre íconos */
-    align-items: center;
+    justify-content: space-between; /* Centrar los elementos horizontalmente */
+    align-items: center; /* Centrar los elementos verticalmente */
+    flex-wrap: wrap; /* Permitir que los elementos se ajusten en pantallas más pequeñas */
+    gap: 70px; /* Espacio entre la imagen y el formulario */
+    margin-top: 30px;
 }
 
-.contact-links img {
-    width: 40px;
-    height: 40px;
-    transition: transform 0.3s;
+
+.container-contact img {
+    width: 600px;
+    height: 400px;
+    bottom: 0px;
+    margin-top: 30px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: 30vw;
+    margin-top: 2em;
+    align-self: flex-end;
+    margin-top: 30px;
+}
+
+.form input {
+    padding: 10px 20px;
+    margin-bottom: 1em;
+    background: none;
+    border: none;
+    border-bottom: 1px solid #fff;
+    color: #fff;
+}
+
+.form textarea {
+    height: 150px;
+    background: none;
+    color: #fff;
+    padding: 1.5em;
+    border: 1px solid #fff;
+}
+
+
+.btn-submit {
+    padding: 10px 20px;
+    background-color: #2b3058;
+    color: #fff;
+    border: none;
     cursor: pointer;
-}
-
-.contact-links img:hover {
-    transform: scale(1.2);
+    margin-top: 1em;
 }
