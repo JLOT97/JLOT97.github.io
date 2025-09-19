@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;700&display=swap');
 
 * {
     margin: 0;
@@ -17,41 +17,44 @@ body {
 /* Páginas OSCURAS (Home, Portfolio): Header CLARO */
 .home-page .navbar,
 .portfolio-page .navbar {
-    background-color: white; /* Fondo blanco para contraste */
-    color: #191c32; /* Texto oscuro */
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Sombra suave para definición */
+    background-color: white;
+    color: #191c32;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
 
 .home-page .Menu a,
 .portfolio-page .Menu a {
-    color: #191c32; /* Texto oscuro */
+    color: #191c32;
 }
 
 .home-page .Menu a:hover,
 .portfolio-page .Menu a:hover {
-    background-color: #191c32; /* Fondo oscuro al hover */
-    color: white; /* Texto blanco al hover */
+    background-color: #191c32;
+    color: white;
 }
 
+/* ENLACE ACTIVO EN HEADERS CLAROS - MÁS VISIBLE */
 .home-page .Menu .active,
 .portfolio-page .Menu .active {
-    color: aqua; /* Color aqua para enlace activo */
+    color: #191c32 !important;
+    background-color: aqua;
+    font-weight: 700;
+    box-shadow: 0 2px 8px rgba(0, 255, 255, 0.4);
 }
 
+/* JO EN AQUA Y NEGRITA PARA TODOS LOS HEADERS */
 .home-page .brand h2 span,
-.portfolio-page .brand h2 span {
-    color: #191c32; /* JO en color oscuro */
+.portfolio-page .brand h2 span,
+.about-page .brand h2 span,
+.contact-page .brand h2 span {
+    color: aqua !important;
+    font-weight: 700;
 }
 
-.home-page .brand h2 span:first-child,
-.portfolio-page .brand h2 span:first-child {
-    color: aqua; /* La "J" en aqua para mantener identidad */
-}
-
-/* Páginas CLARAS (About, Contact): Header OSCURO (como antes) */
+/* Páginas CLARAS (About, Contact): Header OSCURO */
 .about-page .navbar,
 .contact-page .navbar {
-    background-color: #191c32; /* Dark header for light pages */
+    background-color: #191c32;
     color: white;
 }
 
@@ -69,21 +72,23 @@ body {
 .about-page .Menu .active,
 .contact-page .Menu .active {
     color: aqua;
+    font-weight: 700;
 }
 
-.about-page .brand h2 span,
-.contact-page .brand h2 span {
-    color: aqua; /* JO en color aqua */
-}
-
-/* NAVBAR (ESTILOS BASE - se mantienen igual) */
+/* NAVBAR (ESTILOS BASE) */
 .navbar {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     padding: 2em;
     position: sticky;
     top: 0;
     z-index: 1000;
+}
+
+.brand h2 {
+    font-weight: 700;
+    font-size: 1.8rem;
 }
 
 .Menu {
@@ -101,9 +106,10 @@ body {
     padding: 10px 20px;
     border-radius: 20px;
     transition: all 0.3s ease;
+    font-weight: 400;
 }
 
-/* REST OF YOUR CSS REMAINS EXACTLY THE SAME */
+/* REST OF YOUR CSS REMAINS THE SAME */
 /* HOME PAGE */
 .home-page {
     background-color: #191c32;
@@ -415,6 +421,13 @@ span {
     .portfolio-fullpage .container {
         width: 90vw;
     }
+    
+    /* Ajuste para enlaces activos en móviles */
+    .home-page .Menu .active,
+    .portfolio-page .Menu .active {
+        background-color: #191c32;
+        color: aqua !important;
+    }
 }
 
 @media (max-width: 480px) {
@@ -431,5 +444,9 @@ span {
     .about-info h2,
     .contact-info h2 {
         font-size: 1.8em;
+    }
+    
+    .brand h2 {
+        font-size: 1.5rem;
     }
 }
